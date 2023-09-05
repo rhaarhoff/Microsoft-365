@@ -1,0 +1,26 @@
+{
+    "@odata.type":  "#microsoft.graph.iosCompliancePolicy",
+    "description":  "This policy measures compliance for both personally-owned and company-owned iOS/iPadOS devices.",
+    "displayName":  "Standard iOS/iPadOS policy",
+    "passcodeBlockSimple":  true,
+    "passcodeExpirationDays":  null,
+    "passcodeMinimumLength":  6,
+    "passcodeMinutesOfInactivityBeforeLock":  0,
+    "passcodeMinutesOfInactivityBeforeScreenTimeout":  5,
+    "passcodePreviousPasscodeBlockCount":  null,
+    "passcodeMinimumCharacterSetCount":  null,
+    "passcodeRequiredType":  "numeric",
+    "passcodeRequired":  true,
+    "osMinimumVersion":  "13.1",
+    "osMaximumVersion":  null,
+    "osMinimumBuildVersion":  null,
+    "osMaximumBuildVersion":  null,
+    "securityBlockJailbrokenDevices":  true,
+    "deviceThreatProtectionEnabled":  false,
+    "deviceThreatProtectionRequiredSecurityLevel":  "unavailable",
+    "advancedThreatProtectionRequiredSecurityLevel":  "unavailable",
+    "managedEmailProfileRequired":  false,
+    "restrictedApps":  [
+
+                       ]
+}

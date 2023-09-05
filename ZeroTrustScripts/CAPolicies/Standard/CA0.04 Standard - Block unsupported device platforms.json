@@ -1,0 +1,55 @@
+{
+    "displayName": "CA0.04 Standard - Block unsupported device platforms",
+    "createdDateTime": null,
+    "modifiedDateTime": null,
+    "state": "disabled",
+    "sessionControls": null,
+    "conditions": {
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "All"
+        ],
+        "platforms": {
+			"includePlatforms":[
+				"all"
+			],
+			"excludePlatforms":[
+				"android",
+				"iOS",
+				"windows",
+				"macOS"
+			]
+		},
+        "locations": null,
+        "deviceStates": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": []
+        },
+        "users": {
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": [
+				"GuestsOrExternalUsers"
+			],
+            "includeGroups": [],
+            "excludeGroups": [
+				"<EmergencyAccessGroup>"
+			],
+            "includeRoles": [],
+            "excludeRoles": []
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}

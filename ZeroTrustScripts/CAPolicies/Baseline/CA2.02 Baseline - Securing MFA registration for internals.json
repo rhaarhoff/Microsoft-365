@@ -1,0 +1,52 @@
+{
+    "displayName": "CA2.02 Baseline - Securing MFA registration for internals",
+    "createdDateTime": null,
+    "modifiedDateTime": null,
+    "state": "disabled",
+    "sessionControls": null,
+    "conditions": {
+        "signInRiskLevels": [],
+        "clientAppTypes": null,
+        "platforms": null,
+        "deviceStates": null,
+        "applications": {
+            "includeApplications": [],
+            "excludeApplications": [],
+            "includeUserActions": [
+                "urn:user:registersecurityinfo"
+            ]
+        },
+        "users": {
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": [
+                "GuestsOrExternalUsers"
+            ],
+            "includeGroups": [],
+            "excludeGroups": [
+				"<EmergencyAccessGroup>"
+			],
+            "includeRoles": [],
+            "excludeRoles": [
+				"62e90394-69f5-4237-9190-012177145e10"
+			]
+        },
+        "locations": {
+            "includeLocations": [
+                "All"
+            ],
+            "excludeLocations": [
+                "AllTrusted"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}

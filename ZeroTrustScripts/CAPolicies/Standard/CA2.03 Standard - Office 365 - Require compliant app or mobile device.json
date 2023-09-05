@@ -1,0 +1,49 @@
+{
+    "displayName": "CA2.03 Standard - Office 365 - Require compliant app or mobile device",
+    "createdDateTime": null,
+    "modifiedDateTime": null,
+    "state": "disabled",
+    "sessionControls": null,
+    "conditions": {
+        "signInRiskLevels": [],
+        "clientAppTypes": null,
+        "platforms": {
+			"includePlatforms": [
+				"android",
+				"iOS"
+			],
+			"excludePlatforms": []
+		},		
+        "locations": null,
+        "deviceStates": null,
+        "applications": {
+            "includeApplications": [
+                "Office365"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": []
+        },
+        "users": {
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": ["GuestsOrExternalUsers"],
+            "includeGroups": [],
+            "excludeGroups": [
+				"<EmergencyAccessGroup>"
+			],
+            "includeRoles": [],
+            "excludeRoles": []
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "compliantDevice",
+			"approvedApplication",
+			"compliantApplication"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}

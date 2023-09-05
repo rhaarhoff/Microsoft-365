@@ -1,0 +1,50 @@
+{
+    "displayName": "CA0.03 Baseline - Require MFA to register or join devices",
+    "createdDateTime": null,
+    "modifiedDateTime": null,
+    "state": "disabled",
+    "sessionControls": null,
+    "conditions": {
+        "signInRiskLevels": [],
+        "clientAppTypes": null,
+        "platforms": null,
+        "deviceStates": null,
+        "applications": {
+            "includeApplications": [],
+            "excludeApplications": [],
+            "includeUserActions": [
+                "urn:user:registerdevice"
+            ]
+        },
+        "users": {
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": [
+                "GuestsOrExternalUsers"
+            ],
+            "includeGroups": [],
+            "excludeGroups": [
+				"<EmergencyAccessGroup>"
+			],
+            "includeRoles": [],
+            "excludeRoles": []
+        },
+        "locations": {
+            "includeLocations": [
+                "All"
+            ],
+            "excludeLocations": [
+                "AllTrusted"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}
